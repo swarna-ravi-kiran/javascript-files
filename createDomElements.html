@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function createDomButton(){
+            var btnRef = document.createElement("button")
+            btnRef.innerHTML = "javascript button";     //createElement tho manam new html element ni create cheyyochu using javascript
+            btnRef.style.backgroundColor = "yellow"     //h1 and button like this we can create many HTML elements using javascript 
+            var h2Ref = document.createElement("h1");
+            h2Ref.innerText = "CREATING DOM ELEMENTS";
+            h2Ref.style.color = "red";
+            btnRef.onclick = function(){
+            //   alert("working")
+              h2Ref.style.color = "blue"
+              h2Ref.remove();
+              btnRef.remove();
+            }
+            document.getElementById("body").appendChild(btnRef)      // appendchild ante btnRef lo store chesina button ni body lo print chestunnam
+            document.getElementById("body").appendChild(h2Ref)
+            }
+    </script>
+</head>
+<body id="body">
+    <h2>DOM Element</h2>
+    <button>HTML Button</button>
+    <button onclick="createDomButton()">Create DOM Button</button>
+</body>
+</html>

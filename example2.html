@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+          function classSelector(){
+              var paragraph = document.getElementsByClassName("p1")
+              var para = document.getElementsByName("p1")
+              console.log(paragraph);
+              console.log(para)
+              paragraph[1].style.color = "red";
+              paragraph[1].style.backgroundColor = "green";
+              para[0].style.color = "brown";
+              para[0].innerHTML = "<b><i>swarna ravikiran<i></b>"  //content replace chesi bold and italic properties ni add cheyyochu in innerHtml
+                                                                   //but innertext lo only content matrame replace cheyyagalam.  
+            paragraph[2].outerHTML = "ravi"                        //ounterHtml vachesi element and element lo content  ni kuda replace chestadi....p,h2,div these are the elements
+            
+
+
+            //   for(var i in paragraph[1]){
+            //     console.log(i)
+            //   }
+          }
+    </script>
+</head>
+<body>
+    <div>
+        <h2>Class Selector</h2>
+        <p class="p1" name="p1"><b>utasnjsbccccccgfhfjhgsdhfgdgddgbdnkkkkdgydsuif</b></p>
+        <p class ="p1">utasnjsbccccccgfhfjhgsdhfgdgddgbdnkkkkdgydsuif</p>
+        <p class ="p1">utasnjsbccccccgfhfjhgsdhfgdgddgbdnkkkkdgydsuif</p>
+        <p class ="p1">utasnjsbccccccgfhfjhgsdhfgdgddgbdnkkkkdgydsuif</p>
+        <button onclick="classSelector()">Submit</button>
+    </div>
+</body>
+</html>
