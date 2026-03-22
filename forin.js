@@ -9,3 +9,5 @@ for(var x in obj){
     console.log(x , ":",obj[x]);  //ikkada dot property ni use cheyyadaniki because dynamic ga object ni handle chesetappudu [] use cheyyali dot property work avvadu
                                    //ikkada keys mottam x lo store ayyi vuntay .... var x is variable declaration and obj is object name
 }
+
+//used for only object's if you use of it will thrwo error.
