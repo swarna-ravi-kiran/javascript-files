@@ -11,3 +11,6 @@ return index + 10
 //return element *40//
   })
   console.log(Array)
+
+  //map will use to perform any action for all elements in an array and it will return new array with the same length.
+  

@@ -36,3 +36,5 @@ console.log('5' + 3 -2);
 console.log('5' + 3 +2);
 console.log(typeof typeof null)               //typeof object is string  
 console.log(typeof null)                       //typeof null is object
+console.log(typeof undefined)                 //undefined
+console.log(typeof NaN)                       //number
